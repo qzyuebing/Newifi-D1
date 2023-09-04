@@ -10,11 +10,5 @@ config conf 'common'
 	option server_addr '127.0.0.1'
 	option server_port '7000'
 	option tls_enable 'false'
-        option login_fail_exit 'false'
-
-config conf 'ssh'
-	option type 'tcp'
-	option local_ip '127.0.0.1'
-	option local_port '22'
-	option remote_port '6000'
+	option login_fail_exit 'false'
 
