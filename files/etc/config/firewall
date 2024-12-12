@@ -3,6 +3,7 @@ config defaults
 	option input 'ACCEPT'
 	option output 'ACCEPT'
 	option fullcone '1'
+	option synflood_protect '1'
 	option forward 'ACCEPT'
 
 config zone
@@ -131,9 +132,15 @@ config rule
 config include
 	option path '/etc/firewall.user'
 
-config include 'zerotier'
+config include 'miniupnpd'
 	option type 'script'
-	option path '/etc/zerotier.reload'
+	option path '/usr/share/miniupnpd/firewall.include'
+	option family 'any'
+	option reload '1'
+
+config include 'luci_app_pptp_server'
+	option type 'script'
+	option path '/var/etc/pptpd.include'
 	option reload '1'
 
 config include 'passwall'

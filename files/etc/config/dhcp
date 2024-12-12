@@ -26,8 +26,9 @@ config dnsmasq
 config dhcp 'lan'
 	option interface 'lan'
 	option start '2'
-	option limit '60'
+	option limit '99'
 	option leasetime '1h'
+	list ra_flags 'none'
 
 config dhcp 'wan'
 	option interface 'wan'

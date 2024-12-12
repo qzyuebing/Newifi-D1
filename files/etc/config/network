@@ -13,6 +13,8 @@ config device
 	option type 'bridge'
 	list ports 'lan1'
 	list ports 'lan2'
+	list ports 'lan3'
+	list ports 'lan4'
 
 config interface 'lan'
 	option device 'br-lan'

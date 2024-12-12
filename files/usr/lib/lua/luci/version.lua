@@ -16,5 +16,5 @@ else
 	distversion = "Development Snapshot"
 end
 
-luciname    = "IPTV转发"
-luciversion = "MMDVM热点"
+luciname    = "IPTV&MMDVM"
+luciversion = "MT7621"
