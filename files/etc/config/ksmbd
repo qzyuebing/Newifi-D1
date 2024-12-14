@@ -5,10 +5,10 @@ config globals
 
 config share
 	option name 'ssd'
-	option path '/mnt/sda'
 	option read_only 'no'
 	option guest_ok 'yes'
 	option force_root '1'
 	option create_mask '0755'
 	option dir_mask '0755'
+	option path '/mnt/mmcblk0p1'
 
