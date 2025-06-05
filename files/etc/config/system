@@ -7,6 +7,8 @@ config system
 	option timezone 'CST-8'
 	option zonename 'Asia/Shanghai'
 	option hostname 'Newifi-D1'
+	option description 'MMDVM'
+	option notes '本固件由BI4PCS打包 感谢BD7MQB老师提供的源码'
 	option log_proto 'udp'
 	option conloglevel '8'
 	option cronloglevel '5'
