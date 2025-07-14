@@ -4,6 +4,7 @@ config core 'main'
 	option ubuspath '/ubus/'
 	option lang 'zh_cn'
 	option mediaurlbase '/luci-static/bootstrap-mmdvm'
+	option socket '/var/run/ubus.sock'
 
 config extern 'flash_keep'
 	option uci '/etc/config/'
