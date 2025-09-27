@@ -31,11 +31,3 @@ config interface 'wan6'
 	option device 'wan'
 	option proto 'dhcpv6'
 
-config interface 'trw_wwan'
-	option proto 'dhcp'
-	option metric '101'
-
-config interface 'trw_wwan6'
-	option device '@trw_wwan'
-	option proto 'dhcpv6'
-
